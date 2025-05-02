@@ -1,0 +1,3 @@
+An object is a collection of related data and/or functionallity. These usually consists of several variables and functions, which are called properties and methods when inside object expressions.
+'this' keyword: 'this' keyword usually refers to the current object the code is being executed in. In the context of an object method, 'this' refers to the object that the method was called on.
+'this' keyword is essencial in constructor functions.
