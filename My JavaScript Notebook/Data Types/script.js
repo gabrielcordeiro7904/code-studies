@@ -1,8 +1,28 @@
 // ARRAYS ------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Objects allow data to be stored in collections of keyed pairs. But quite often there's need for an ORDERED COLLECTION, where there is 1st, 2st, 3st element and so on.
-// Array is the special data structure that allows ordered collection of data.
+// Array is the special data structure that allows ordered collection of data, they are dynamic (change in lenght) and heterogeneous (stores multiple data-types).
 // An array expression is made with square-brackets with the data inside [1, 2, 3, 4, 5, ...]
+// Arrays syntax comes from objects, where the square-brackets hold the keys. 
+// Arrays extend objects by providing methods to work with ordered collections of data and also the length property. But at the core it's still an object.
+// Remember there's only 8 basic data-types in JavaScript, array is an object and thus behave like one.
 
+// length METHOD gives the number of elements. Keep in mind that arrays start at 0, the last index is (length - 1).
+
+// ADDING AND REMOVING METHODS:
+// pop METHOD takes an element from the end.
+// push METHOD adds an element to the end.
+// shift METHOD extracts the last element.
+// unshift METHOD inserts an element to the end the array 
+// pop/push METHODS are faster than shift/unshift METHODS, because the latter algorithm is longer.
+// splice METHOD
+
+// at METHOD gets element at a certain index of the array.
+
+// DO NOT COMPARE ARRAYS WITH equality operator ==
+// In JavaScript two objects are equal only if they reference to the same object.
+// It's possible if an object compared to a primitive gets coerced to a primitive and thus evaluated true (not possible with strict equality ===). 
+// Arrays are always diferent objects, so they will never get evaluated true.
+// To compare arrays, refer to a item-by-item iteration algorithm, with iteration methods from JavaScript. 
 
 // ITERABLES ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
