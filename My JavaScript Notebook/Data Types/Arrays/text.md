@@ -75,3 +75,18 @@ find/findIndex/findLastIndex METHODS:
 It's possible if an object compared to a primitive gets coerced to a primitive and thus evaluated true (not possible with strict equality ===). 
 Arrays are always diferent objects, so they will never get evaluated true.
 To compare arrays, refer to a item-by-item iteration algorithm, with iteration methods from JavaScript. 
+
+
+TRANSFORM AN ARRAY ---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    arr.map(function(item, index, array){}) - calls the function for each element of the array and returns an array of the results.
+    
+    arr.sort(function(item, index, array){}) - sorts array in place, elements are sorted as string by default. To use another sorting method, please provide a function.
+
+    arr.reverse() - reverse the order of elements in an array.
+
+    arr.split(delim, limit) - splits phrase-strings with its commas, with a possible limit of words. Without a delimiter, the words are splited into letters.
+
+    arr.join(glue) - does the oposite of split(), it creates a string of array elements joined by 'glue' between them.
+
+    arr.reduce(function(accumulator, item, index, array){...}, initial) - method used to calculate a single value based on the array elements. 
