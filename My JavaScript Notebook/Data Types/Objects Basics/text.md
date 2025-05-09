@@ -19,7 +19,8 @@ object["key word"] = value
 Computed properties names are possible with the square brackets notation! The string-value of the key can be assigned via a variable that holds data from user-input.
 
 PROPERTIES LIMITATIONS
-In variables it's impossible to assign their names to JavaScript keywords ('for', etc..), but that limitation does not hold on objects.
+In variables it's impossible to assign their names to JavaScript keywords ('for', etc..), but that limitation does not hold on objects keys.
+Object keys can be either a string or a symbol!
 Properties can be named with keyword names. The only limitation is the .__proto__ property, as it cannot be assigned to non-object values.
 
 PROPERTY EXISTENT TEST, OPERATOR 'in'

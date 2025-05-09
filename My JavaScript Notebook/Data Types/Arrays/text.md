@@ -13,6 +13,13 @@ shift METHOD extracts the last element.
 unshift METHOD inserts an element to the end the array 
 pop/push METHODS are faster than shift/unshift METHODS, because the latter algorithm is longer.
 
+ARRAY LOOPS ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+'for...of' loops are the most optimized for arrays.
+'for...in' loops technically works, but are 10x slower. In array-like objects they also return other non-numeric properties that don't act as indexes, such as properties and methods, making 'for...of' loops the best practice.
+
+ARRAY LENGTH ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+The 'length' property automatically updates when the array is modified. To be precise, it counts the highest index + 1.
+
 OTHER ADD/REMOVE METHODS ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 splice METHOD:
@@ -33,10 +40,15 @@ ITERATE: forEach METHOD:
     allows a function to run by each element and its corresponding index and array of the array invoked forEach method.
 
 
-SEARCHING AN ARRAY -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SEARCHING AN ARRAY ---------------------------------------------------------------------------------------------------------------------------------------------------
     
-indexOf METHOD:
-    
+indexOf/lastIndexOf/includes METHODS:
+    arr.indexOf(item, from) - looks for "item" starting from index "from", and returns the index where it was found, otherwise -1.
+    arr.lastIndexOf(item, from) - it's the same as above, but looks from right to left.
+
+    arr,includes(item, from) - looks for "item" starting from index "from" and returns true if found, otherwise false.
+
+find/findIndex/findLastIndex METHODS:
 
 
 
