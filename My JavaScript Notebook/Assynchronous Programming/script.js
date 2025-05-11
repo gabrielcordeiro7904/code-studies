@@ -1,8 +1,17 @@
-// INTRODUCTION TO CALLBACKS ---------------------------------------------------------------------------------------------------------------------------------------------------
-// Some functions in Javascript are assynchronous host environments that allow you to schedule assynchronous statements.
-// Some examples of assynchronous statements are scripts/modules loading statements. You can add a callback statement to execute after the loading is finished.
-// Callbacks are placeholders for function arguments to execute after an assynchronous function is computed, making assynchronous programming possible.
-// Thats called "Callback-based assychronous programming".
+// INTRODUCTION: CALLBACKS
+// Some functions provided by JavaScript host environments that allow asynchronous actions.
+// For instance, setTimeout function or loadScript(src) function.
 
-// PROMISSES & CONSUMERS
-// Promisses are executors of tasks with possible outputs of resolve(value) and reject(error), consumers
+
+// function loadScript(src, callback ) {
+//   // creates a <script> tag and append it to the page
+//   // this causes the script with given src to start loading and run when complete
+//   let script = document.createElement('script');
+//   script.src = src;
+
+//   script.onload = () => callback(script);
+
+//   document.head.append(script);
+// };
+
+// loadScript('/my/script.js', function() {newFunction();});
